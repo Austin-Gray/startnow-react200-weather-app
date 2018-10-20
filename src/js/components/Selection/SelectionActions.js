@@ -1,7 +1,11 @@
-export const getWeather = () => ({
+const axios = require('axios');
+
+export const getWeather = (city) => ({
     type: 'GET_WEATHER',
-    payload: axios({
-        url: `api.openweathermap.org/data/2.5/weather?q=${city}&APPID=${API_KEY}`,
-        method: 'get',
-    })
+    payload: axios.get(`http://localhost:3000/weather/${city}`)
 });
+
+export const updateCity = (city) => ({
+    type: 'UPDATE_CITY',
+    payload: { city }
+})

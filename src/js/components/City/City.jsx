@@ -20,7 +20,7 @@ export default class City extends React.Component {
                             <h5 className='col-4'> Pressure </h5>
                             <h5 className='col-4'> Humidity </h5>
                         </div>
-                        <div className='row'>
+                        <div className='row text-success'>
                             <h5 className='col-4'> 65.62 </h5>
                             <h5 className='col-4'> 997 </h5>
                             <h5 className='col-4'> 39% </h5>

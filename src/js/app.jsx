@@ -1,5 +1,5 @@
 import React from 'react';
-import Selection from './components/Selection/Selection.jsx';
+import Selection from './components/Selection';
 import City from './components/City/City.jsx';
 import History from './components/History/History.jsx';
 
