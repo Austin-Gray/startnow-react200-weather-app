@@ -1,6 +1,6 @@
 import React from 'react';
 import Selection from './components/Selection';
-import City from './components/City/City.jsx';
+import City from './components/City';
 import History from './components/History/History.jsx';
 
 export default class App extends React.Component {

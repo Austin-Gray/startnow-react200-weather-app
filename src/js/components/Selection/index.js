@@ -3,7 +3,7 @@ import Selection from './Selection';
 
 function mapStoreToProps(store) {
     return {
-        city: store.selection.city,
+        citySearch: store.selection.citySearch,
     };
 }
 

@@ -9,9 +9,9 @@ app.use(morgan('dev'));
 app.use(express.static('dist'));
 app.use(express.static('public'));
 
-app.get('/weather/:city', (req, res) => {
+app.get('/weather/:citySearch', (req, res) => {
     axios({
-        url: `http://api.openweathermap.org/data/2.5/weather?q=${req.params.city}&APPID=${process.env.API_KEY}`,
+        url: `http://api.openweathermap.org/data/2.5/weather?q=${req.params.citySearch}&APPID=${process.env.API_KEY}&units=imperial`,
         method: 'get',
     })
     .then(response => {

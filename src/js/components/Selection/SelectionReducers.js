@@ -1,7 +1,13 @@
 const defaultState = {
+    citySearch: '',
     city: '',
-    coord: {},
-    weather: {},
+    lat: '',
+    lon: '',
+    temp: '',
+    pressure: '',
+    humidity: '',
+    temp_min: '',
+    temp_max: '',
     wind: ''
 };
 
@@ -13,15 +19,20 @@ export default function CityReducer (state = defaultState, action) {
             return {
                 ...state,
                 city: payload.data.name,
-                coord: payload.data.coord,
-                weather: payload.data.main,
+                lat: payload.data.coord.lat,
+                lon: payload.data.coord.lon,
+                temp: payload.data.main.temp,
+                pressure: payload.data.main.pressure,
+                humidity: payload.data.main.humidity,
+                temp_min: payload.data.main.temp_min,
+                temp_max: payload.data.main.temp_max,
                 wind: payload.data.wind.speed
             };
         }
         case 'UPDATE_CITY': {
             return {
                 ...state,
-                city: payload.city
+                citySearch: payload.citySearch
             }
         }
         default: {

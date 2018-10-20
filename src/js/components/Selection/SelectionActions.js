@@ -1,11 +1,11 @@
 const axios = require('axios');
 
-export const getWeather = (city) => ({
+export const getWeather = (citySearch) => ({
     type: 'GET_WEATHER',
-    payload: axios.get(`http://localhost:3000/weather/${city}`)
+    payload: axios.get(`http://localhost:3000/weather/${citySearch}`)
 });
 
-export const updateCity = (city) => ({
+export const updateCity = (citySearch) => ({
     type: 'UPDATE_CITY',
-    payload: { city }
+    payload: { citySearch }
 })
