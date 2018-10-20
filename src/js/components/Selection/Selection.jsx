@@ -29,15 +29,15 @@ export default class Selection extends React.Component {
         return (
             <div className='container'>
                 <div className='row btn-group btn-group-toggle' data-toggle='buttons'>
-                        <button className='btn btn-primary' type="radio" name="cities" id="san-diego" autoComplete="off"> San Diego </button>
-                        <button className='btn btn-primary' type="radio" name="cities" id="san-diego" autoComplete="off"> New York </button>
-                        <button className='btn btn-primary' type="radio" name="cities" id="san-diego" autoComplete="off"> Washington D.C </button>
-                        <button className='btn btn-primary' type="radio" name="cities" id="san-diego" autoComplete="off"> London </button>
-                        <button className='btn btn-primary' type="radio" name="cities" id="san-diego" autoComplete="off"> Tokyo </button>
+                        <button className='btn btn-primary' type="radio" name="cities" id="san-diego" autoComplete="off" value='San Diego' onClick={ this.handleCityInput }> San Diego </button>
+                        <button className='btn btn-primary' type="radio" name="cities" id="new-york" autoComplete="off" value='New York' onClick={ this.handleCityInput }> New York </button>
+                        <button className='btn btn-primary' type="radio" name="cities" id="washington-dc" autoComplete="off" value='Washington D.C.' onClick={ this.handleCityInput }> Washington D.C. </button>
+                        <button className='btn btn-primary' type="radio" name="cities" id="london" autoComplete="off" value='London' onClick={ this.handleCityInput }> London </button>
+                        <button className='btn btn-primary' type="radio" name="cities" id="tokyo" autoComplete="off" value='Tokyo' onClick={ this.handleCityInput }> Tokyo </button>
                 </div>
                 <div className='row'>
                     <div className='input-group'>
-                        <input type='text' className='form-control' placeholder='' value={ city } onChange={ this.handleCityInput }/>
+                        <input type='text' className='form-control' placeholder='Search' value={ city } onChange={ this.handleCityInput }/>
                         <div className='input-group-append'>
                             <button className='btn btn-outline-secondary' type='button' onClick={ this.handleSearch }>Go!</button>
                         </div>
