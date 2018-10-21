@@ -1,7 +1,7 @@
 import React from 'react';
 import Selection from './components/Selection';
 import City from './components/City';
-import History from './components/History/History.jsx';
+import History from './components/History';
 
 export default class App extends React.Component {
   render() {
@@ -15,10 +15,10 @@ export default class App extends React.Component {
           <Selection />
         </div>
         <div className='mt-3 mb-3 row'>
-          <div className='col-12 col-md-6 mb-3 pl-0'>
+          <div className='city col-12 col-md-6 mb-3 pl-0'>
             <City />
           </div>
-          <div className='col-12 col-md-6 md-3 pr-0'>
+          <div className='history col-12 col-md-6 md-3 pr-0'>
             <History />
           </div>
         </div>

@@ -8,7 +8,8 @@ const defaultState = {
     humidity: '',
     temp_min: '',
     temp_max: '',
-    wind: ''
+    wind: '',
+    history: []
 };
 
 export default function CityReducer (state = defaultState, action) {
@@ -26,7 +27,15 @@ export default function CityReducer (state = defaultState, action) {
                 humidity: payload.data.main.humidity,
                 temp_min: payload.data.main.temp_min,
                 temp_max: payload.data.main.temp_max,
-                wind: payload.data.wind.speed
+                wind: payload.data.wind.speed,
+                history: [
+                    ...state.history,
+                    {
+                        city: payload.data.name,
+                        date: new Date().toLocaleDateString(),
+                        time: new Date().toLocaleTimeString()
+                    }
+                ]
             };
         }
         case 'UPDATE_CITY': {

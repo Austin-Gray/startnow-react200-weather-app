@@ -18,24 +18,24 @@ export default class City extends React.Component {
                         </div>
                         <hr></hr>
                         <div className='row'>
-                            <h5 className='col-4'> Temperature (F) </h5>
-                            <h5 className='col-4'> Pressure </h5>
-                            <h5 className='col-4'> Humidity </h5>
+                            <h6 className='col-4'> Temperature (F) </h6>
+                            <h6 className='col-4'> Pressure </h6>
+                            <h6 className='col-4'> Humidity </h6>
                         </div>
                         <div className='row text-success'>
-                            <h5 className='col-4'>{ temp }</h5>
-                            <h5 className='col-4'>{ pressure }</h5>
-                            <h5 className='col-4'>{ humidity }</h5>
+                            <h6 className='col-4'>{ temp }</h6>
+                            <h6 className='col-4'>{ pressure }</h6>
+                            <h6 className='col-4'>{ humidity }</h6>
                         </div>
                         <div className='row'>
-                            <h5 className='col-4'> Lowest Temp (F) </h5>
-                            <h5 className='col-4'> Highest Temp (F) </h5>
-                            <h5 className='col-4'> Wind Speed </h5>
+                            <h6 className='col-4'> Lowest Temp (F) </h6>
+                            <h6 className='col-4'> Highest Temp (F) </h6>
+                            <h6 className='col-4'> Wind Speed </h6>
                         </div>
                         <div className='row'>
-                            <h5 className='col-4'>{ temp_min }</h5>
-                            <h5 className='col-4'>{ temp_max }</h5>
-                            <h5 className='col-4'>{ wind }</h5>
+                            <h6 className='col-4'>{ temp_min }</h6>
+                            <h6 className='col-4'>{ temp_max }</h6>
+                            <h6 className='col-4'>{ wind }</h6>
                         </div>
                     </div>
                 </div>
