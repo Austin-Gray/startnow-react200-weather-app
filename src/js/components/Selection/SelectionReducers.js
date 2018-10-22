@@ -12,7 +12,7 @@ const defaultState = {
     history: []
 };
 
-export default function CityReducer (state = defaultState, action) {
+export default function SelectionReducer (state = defaultState, action) {
     const { type, payload } = action;
 
     switch (type) {
