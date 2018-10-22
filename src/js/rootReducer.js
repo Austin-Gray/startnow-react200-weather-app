@@ -1,5 +1,5 @@
 import { combineReducers } from 'redux';
-import selectionReducer from './components/Selection/selectionReducers';
+import selectionReducer from './js/components/Selection/selectionReducers';
 
 const rootReducer = combineReducers({
     selection: selectionReducer
